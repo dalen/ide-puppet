@@ -1,0 +1,103 @@
+{
+  "name": "ide-puppet",
+  "version": "1.0.0",
+  "description": "Atom IDE plugin for Puppet",
+  "repository": "https://github.com/dalen/atom-ide-puppet",
+  "main": "lib/main.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "engines": {
+    "atom": ">=1.21.0 <2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["puppet", "atom", "atom-ide"],
+  "author": "Erik Dalén",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "atom-languageclient": "^0.6.5"
+  },
+  "configSchema": {
+    "languageServerPath": {
+      "title": "Puppet Language Server Path",
+      "type": "string",
+      "default": "/usr/local/bin/puppet-languageserver",
+      "description":
+        "Absolute path to the Puppet Language Server binary (e.g. `/usr/local/bin/puppet-languageserver`)."
+    },
+    "port": {
+      "title": "Port",
+      "type": "integer",
+      "default": 8081,
+      "description": "Port to use for the language server."
+    }
+  },
+  "enhancedScopes": ["source.puppet"],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "code-format.range": {
+      "versions": {
+        "0.1.0": "provideCodeFormat"
+      }
+    },
+    "code-highlight": {
+      "versions": {
+        "0.1.0": "provideCodeHighlight"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "class-methods-use-this": [
+        "error",
+        { "exceptMethods": ["getGrammarScopes", "getLanguageName", "getServerName"] }
+      ]
+    },
+    "globals": {
+      "atom": false
+    },
+    "env": {
+      "node": true
+    }
+  }
+}
