@@ -5,7 +5,6 @@
   "repository": "https://github.com/dalen/ide-puppet",
   "main": "lib/main.js",
   "directories": {
-    "doc": "docs",
     "lib": "lib"
   },
   "engines": {
