@@ -2,6 +2,8 @@
 
 ## Requirements
 
+* Install [atom-ide-ui](https://atom.io/packages/atom-ide-ui)
+
 * Install the Puppet Agent
 
 [Linux](https://docs.puppet.com/puppet/latest/install_linux.html)
