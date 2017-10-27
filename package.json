@@ -1,6 +1,6 @@
 {
   "name": "ide-puppet",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Atom IDE plugin for Puppet",
   "repository": "https://github.com/dalen/ide-puppet",
   "main": "lib/main.js",
@@ -13,7 +13,11 @@
   "scripts": {
     "test": "eslint lib"
   },
-  "keywords": ["puppet", "atom", "atom-ide"],
+  "keywords": [
+    "puppet",
+    "atom",
+    "atom-ide"
+  ],
   "author": "Erik Dalén",
   "license": "Apache-2.0",
   "dependencies": {
@@ -24,8 +28,7 @@
       "title": "Puppet Agent Ruby Path",
       "type": "string",
       "default": "/opt/puppetlabs/puppet/bin/ruby",
-      "description":
-        "Absolute path to the Puppet Agent ruby binary (e.g. `/opt/puppetlabs/puppet/bin/ruby`)."
+      "description": "Absolute path to the Puppet Agent ruby binary (e.g. `/opt/puppetlabs/puppet/bin/ruby`)."
     },
     "port": {
       "title": "Port",
@@ -34,7 +37,9 @@
       "description": "Port to use for the language server."
     }
   },
-  "enhancedScopes": ["source.puppet"],
+  "enhancedScopes": [
+    "source.puppet"
+  ],
   "consumedServices": {
     "linter-indie": {
       "versions": {
@@ -89,7 +94,13 @@
     "rules": {
       "class-methods-use-this": [
         "error",
-        { "exceptMethods": ["getGrammarScopes", "getLanguageName", "getServerName"] }
+        {
+          "exceptMethods": [
+            "getGrammarScopes",
+            "getLanguageName",
+            "getServerName"
+          ]
+        }
       ]
     },
     "globals": {
