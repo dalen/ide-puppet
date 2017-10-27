@@ -1,6 +1,6 @@
 {
   "name": "ide-puppet",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Atom IDE plugin for Puppet",
   "repository": "https://github.com/dalen/ide-puppet",
   "main": "lib/main.js",
