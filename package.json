@@ -2,7 +2,7 @@
   "name": "ide-puppet",
   "version": "1.0.0",
   "description": "Atom IDE plugin for Puppet",
-  "repository": "https://github.com/dalen/atom-ide-puppet",
+  "repository": "https://github.com/dalen/ide-puppet",
   "main": "lib/main.js",
   "directories": {
     "doc": "docs",
@@ -12,7 +12,7 @@
     "atom": ">=1.21.0 <2.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint lib"
   },
   "keywords": ["puppet", "atom", "atom-ide"],
   "author": "Erik Dalén",
@@ -21,12 +21,12 @@
     "atom-languageclient": "^0.6.5"
   },
   "configSchema": {
-    "languageServerPath": {
-      "title": "Puppet Language Server Path",
+    "puppetRubyPath": {
+      "title": "Puppet Agent Ruby Path",
       "type": "string",
-      "default": "/usr/local/bin/puppet-languageserver",
+      "default": "/opt/puppetlabs/puppet/bin/ruby",
       "description":
-        "Absolute path to the Puppet Language Server binary (e.g. `/usr/local/bin/puppet-languageserver`)."
+        "Absolute path to the Puppet Agent ruby binary (e.g. `/opt/puppetlabs/puppet/bin/ruby`)."
     },
     "port": {
       "title": "Port",
@@ -98,6 +98,9 @@
     },
     "env": {
       "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 7
     }
   }
 }
