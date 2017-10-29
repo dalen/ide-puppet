@@ -1,6 +1,6 @@
 {
   "name": "ide-puppet",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Atom IDE plugin for Puppet",
   "repository": "https://github.com/dalen/ide-puppet",
   "main": "lib/main.js",
@@ -13,7 +13,11 @@
   "scripts": {
     "test": "eslint lib"
   },
-  "keywords": ["puppet", "atom", "atom-ide"],
+  "keywords": [
+    "puppet",
+    "atom",
+    "atom-ide"
+  ],
   "author": "Erik Dalén",
   "license": "Apache-2.0",
   "dependencies": {
@@ -22,24 +26,31 @@
     "es6-promisify": "^5.0.0",
     "net-retry-connect": "^0.1.1"
   },
-  "package-deps": ["atom-ide-ui", "language-puppet"],
+  "package-deps": [
+    "atom-ide-ui",
+    "language-puppet"
+  ],
   "configSchema": {
     "puppetRubyPath": {
       "title": "Puppet Agent Ruby Path",
       "type": "string",
       "default": "/opt/puppetlabs/puppet/bin/ruby",
-      "description":
-        "Absolute path to the Puppet Agent ruby binary (e.g. `/opt/puppetlabs/puppet/bin/ruby`)."
+      "description": "Absolute path to the Puppet Agent ruby binary (e.g. `/opt/puppetlabs/puppet/bin/ruby`)."
     },
     "connectionType": {
       "title": "Connection Type",
       "type": "string",
-      "enum": ["stdio", "socket"],
+      "enum": [
+        "stdio",
+        "socket"
+      ],
       "default": "socket",
       "description": "The connection type for communicating with the Puppet language server."
     }
   },
-  "enhancedScopes": ["source.puppet"],
+  "enhancedScopes": [
+    "source.puppet"
+  ],
   "consumedServices": {
     "linter-indie": {
       "versions": {
@@ -90,7 +101,12 @@
       "class-methods-use-this": [
         "error",
         {
-          "exceptMethods": ["getGrammarScopes", "getLanguageName", "getServerName", "spawnServer"]
+          "exceptMethods": [
+            "getGrammarScopes",
+            "getLanguageName",
+            "getServerName",
+            "spawnServer"
+          ]
         }
       ],
       "comma-dangle": [
