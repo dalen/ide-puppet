@@ -28,7 +28,7 @@
     "net-retry-connect": "^0.1.1"
   },
   "devDependencies": {
-    "@types/atom": "^1.21.5",
+    "@types/atom": "^1.26.0",
     "@types/es6-promisify": "^6.0.0",
     "@types/get-port": "^3.2.0",
     "eslint": "^4.19.1",
