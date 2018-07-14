@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@types/atom@^1.24.1", "@types/atom@^1.27.0":
-  version "1.27.0"
-  resolved "https://registry.yarnpkg.com/@types/atom/-/atom-1.27.0.tgz#72b7f2856c10e78084cd065deb1602146e567212"
+"@types/atom@^1.24.1", "@types/atom@^1.28.0":
+  version "1.28.0"
+  resolved "https://registry.yarnpkg.com/@types/atom/-/atom-1.28.0.tgz#1c80cfa41381b6609e3eac4f84c013cd5069d36d"
   dependencies:
     "@types/node" "*"
 
