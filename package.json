@@ -34,7 +34,7 @@
     "eslint": "^5.2.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "typescript": "^2.9.2",
+    "typescript": "^3.0.1",
     "typescript-eslint-parser": "^17.0.1"
   },
   "package-deps": [
