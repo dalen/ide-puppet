@@ -33,7 +33,7 @@
     "@types/get-port": "^4.0.0",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "typescript": "^3.0.1",
     "typescript-eslint-parser": "^18.0.0"
   },
