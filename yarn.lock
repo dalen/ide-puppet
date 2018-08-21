@@ -12,9 +12,9 @@
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@types/es6-promisify/-/es6-promisify-6.0.0.tgz#a554e8c9c28466720a96b20c9f6b139249b7d375"
 
-"@types/get-port@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@types/get-port/-/get-port-3.2.0.tgz#f9e0a11443cc21336470185eae3dfba4495d29bc"
+"@types/get-port@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/get-port/-/get-port-4.0.0.tgz#6efd3f16eab8366faf713c2039c22a93467fab15"
 
 "@types/node@*":
   version "9.6.5"
