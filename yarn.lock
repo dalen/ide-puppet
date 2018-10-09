@@ -104,16 +104,16 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.9.6:
-  version "0.9.6"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.6.tgz#2bbb8fad72ae183c0a7d5ac3cbeea87358ecf260"
+atom-languageclient@^0.9.7:
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.7.tgz#c13b5d7a6efd1d6636c456db72e3bfba4e114e7c"
   dependencies:
     "@types/atom" "^1.28.0"
     "@types/node" "^8.0.41"
     fuzzaldrin-plus "^0.6.0"
-    vscode-jsonrpc "^3.6.0"
+    vscode-jsonrpc "3.6.2"
     vscode-languageserver-protocol "3.6.0-next.5"
-    vscode-languageserver-types "^3.6.0-next.1"
+    vscode-languageserver-types "3.6.1"
 
 atom-package-deps@^4.6.2:
   version "4.6.2"
@@ -1142,7 +1142,7 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vscode-jsonrpc@^3.6.0:
+vscode-jsonrpc@3.6.2:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.6.2.tgz#3b5eef691159a15556ecc500e9a8a0dd143470c8"
 
@@ -1156,6 +1156,10 @@ vscode-languageserver-protocol@3.6.0-next.5:
   dependencies:
     vscode-jsonrpc "^3.6.0-next.1"
     vscode-languageserver-types "^3.6.0-next.1"
+
+vscode-languageserver-types@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.6.1.tgz#4bc06a48dff653495f12f94b8b1e228988a1748d"
 
 vscode-languageserver-types@^3.6.0-next.1:
   version "3.7.1"
