@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/atom": "^1.31.0",
     "@types/es6-promisify": "^6.0.0",
-    "@types/get-port": "^4.0.0",
+    "@types/get-port": "^4.0.1",
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
