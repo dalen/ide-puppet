@@ -150,19 +150,12 @@ atom-languageclient@^0.9.7:
     vscode-languageserver-protocol "3.6.0-next.5"
     vscode-languageserver-types "3.6.1"
 
-atom-package-deps@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/atom-package-deps/-/atom-package-deps-4.6.2.tgz#9976ecd6d137bf8c8b24859edf319c2dd0e76b4d"
+atom-package-deps@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/atom-package-deps/-/atom-package-deps-5.0.0.tgz#bd54b734b9288ed54a7b0b16995bf3ce7a45ca2f"
   dependencies:
-    atom-package-path "^1.1.0"
     sb-fs "^3.0.0"
-    semver "^5.3.0"
-
-atom-package-path@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/atom-package-path/-/atom-package-path-1.1.0.tgz#b51fedbc00e7c8ce5223d0d803db7a3f4f69614f"
-  dependencies:
-    sb-callsite "^1.1.2"
+    semver "^5.6.0"
 
 babel-code-frame@^6.22.0:
   version "6.26.0"
@@ -1228,10 +1221,6 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-sb-callsite@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/sb-callsite/-/sb-callsite-1.1.2.tgz#28191fb66d64e3a3ee92084a95a90fcb5102243b"
-
 sb-fs@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/sb-fs/-/sb-fs-3.0.0.tgz#fbdcdd3010e80a1b8e27490cef336064974203b8"
@@ -1250,6 +1239,10 @@ sb-promisify@^2.0.1:
 semver@^5.5.1:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
+
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
 
 shebang-command@^1.2.0:
   version "1.2.0"
