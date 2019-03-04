@@ -24,7 +24,7 @@
     "atom-languageclient": "^0.9.7",
     "atom-package-deps": "^4.6.2",
     "es6-promisify": "^6.0.0",
-    "get-port": "^4.0.0",
+    "get-port": "^4.2.0",
     "net-retry-connect": "^0.1.1"
   },
   "devDependencies": {
