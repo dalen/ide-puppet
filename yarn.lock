@@ -16,9 +16,9 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@types/atom@^1.28.0", "@types/atom@^1.31.0":
-  version "1.31.0"
-  resolved "https://registry.yarnpkg.com/@types/atom/-/atom-1.31.0.tgz#eb7c0f5505617ded4ea376b0abaa1795891e13dc"
+"@types/atom@^1.28.0", "@types/atom@^1.40.5":
+  version "1.40.5"
+  resolved "https://registry.yarnpkg.com/@types/atom/-/atom-1.40.5.tgz#98d3e06ef80845b4a6decedcc27d227864bdca56"
   dependencies:
     "@types/node" "*"
 
