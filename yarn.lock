@@ -16,7 +16,7 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@types/atom@^1.28.0", "@types/atom@^1.31.0":
+"@types/atom@^1.31.0":
   version "1.31.0"
   resolved "https://registry.yarnpkg.com/@types/atom/-/atom-1.31.0.tgz#eb7c0f5505617ded4ea376b0abaa1795891e13dc"
   dependencies:
@@ -33,10 +33,6 @@
 "@types/node@*":
   version "9.6.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.5.tgz#ee700810fdf49ac1c399fc5980b7559b3e5a381d"
-
-"@types/node@^8.0.41":
-  version "8.10.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.8.tgz#794cba23cc9f8d9715f6543fa8827433b5f5cd3b"
 
 acorn-jsx@^3.0.0:
   version "3.0.1"
@@ -139,16 +135,15 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-atom-languageclient@^0.9.7:
-  version "0.9.7"
-  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-0.9.7.tgz#c13b5d7a6efd1d6636c456db72e3bfba4e114e7c"
+atom-languageclient@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/atom-languageclient/-/atom-languageclient-1.0.5.tgz#de56410f0141fb0856dc446688747d0c91217588"
   dependencies:
-    "@types/atom" "^1.28.0"
-    "@types/node" "^8.0.41"
-    fuzzaldrin-plus "^0.6.0"
-    vscode-jsonrpc "3.6.2"
-    vscode-languageserver-protocol "3.6.0-next.5"
-    vscode-languageserver-types "3.6.1"
+    fuzzaldrin-plus-fast "^1.2.4"
+    rimraf "^3.0.2"
+    vscode-jsonrpc "5.0.1"
+    vscode-languageserver-protocol "3.15.3"
+    vscode-languageserver-types "3.15.1"
 
 atom-package-deps@^4.6.2:
   version "4.6.2"
@@ -175,6 +170,12 @@ babel-code-frame@^6.22.0:
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
+
+bindings@~1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
+  dependencies:
+    file-uri-to-path "1.0.0"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -612,6 +613,10 @@ file-entry-cache@^2.0.0:
     flat-cache "^1.2.1"
     object-assign "^4.0.1"
 
+file-uri-to-path@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
+
 find-up@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-1.1.2.tgz#6b2e9822b1a2ce0a60ab64d610eccad53cb24d0f"
@@ -650,9 +655,13 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
-fuzzaldrin-plus@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/fuzzaldrin-plus/-/fuzzaldrin-plus-0.6.0.tgz#832f6489fbe876769459599c914a670ec22947ee"
+fuzzaldrin-plus-fast@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/fuzzaldrin-plus-fast/-/fuzzaldrin-plus-fast-1.2.4.tgz#15a347127d48c389e0d615fbd13adf87ed853efc"
+  dependencies:
+    bindings "~1.5.0"
+    node-addon-api "~3.0.2"
+    node-gyp-build "^4.2.3"
 
 get-port@^4.0.0:
   version "4.0.0"
@@ -661,6 +670,17 @@ get-port@^4.0.0:
 glob@^7.0.3, glob@^7.0.5, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
+glob@^7.1.3:
+  version "7.1.6"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -969,6 +989,14 @@ nice-try@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.4.tgz#d93962f6c52f2c1558c0fbda6d512819f1efe1c4"
 
+node-addon-api@~3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-3.0.2.tgz#04bc7b83fd845ba785bb6eae25bc857e1ef75681"
+
+node-gyp-build@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.2.3.tgz#ce6277f853835f718829efb47db20f3e4d9c4739"
+
 normalize-package-data@^2.3.2:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
@@ -1197,6 +1225,12 @@ rimraf@^2.2.8:
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
     glob "^7.0.5"
+
+rimraf@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  dependencies:
+    glob "^7.1.3"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -1431,28 +1465,20 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vscode-jsonrpc@3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.6.2.tgz#3b5eef691159a15556ecc500e9a8a0dd143470c8"
+vscode-jsonrpc@5.0.1, vscode-jsonrpc@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-5.0.1.tgz#9bab9c330d89f43fc8c1e8702b5c36e058a01794"
 
-vscode-jsonrpc@^3.6.0-next.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/vscode-jsonrpc/-/vscode-jsonrpc-3.6.1.tgz#3f9b8f902077da27f1ffd37c7317a77bd4696a49"
-
-vscode-languageserver-protocol@3.6.0-next.5:
-  version "3.6.0-next.5"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.6.0-next.5.tgz#ed2ec2db759826f753c0a13977dfb2bedc4d31b3"
+vscode-languageserver-protocol@3.15.3:
+  version "3.15.3"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-protocol/-/vscode-languageserver-protocol-3.15.3.tgz#3fa9a0702d742cf7883cb6182a6212fcd0a1d8bb"
   dependencies:
-    vscode-jsonrpc "^3.6.0-next.1"
-    vscode-languageserver-types "^3.6.0-next.1"
+    vscode-jsonrpc "^5.0.1"
+    vscode-languageserver-types "3.15.1"
 
-vscode-languageserver-types@3.6.1:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.6.1.tgz#4bc06a48dff653495f12f94b8b1e228988a1748d"
-
-vscode-languageserver-types@^3.6.0-next.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.7.1.tgz#4835d1c1811f91dd5c92e9446e5b29edd2216969"
+vscode-languageserver-types@3.15.1:
+  version "3.15.1"
+  resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.15.1.tgz#17be71d78d2f6236d414f0001ce1ef4d23e6b6de"
 
 which@^1.2.9:
   version "1.3.0"
