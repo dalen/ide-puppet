@@ -22,7 +22,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "atom-languageclient": "^0.9.7",
-    "atom-package-deps": "^4.6.2",
+    "atom-package-deps": "^7.1.0",
     "es6-promisify": "^6.0.0",
     "get-port": "^4.0.0",
     "net-retry-connect": "^0.1.1"
