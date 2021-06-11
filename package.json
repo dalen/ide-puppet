@@ -21,7 +21,7 @@
   "author": "Erik Dalén",
   "license": "Apache-2.0",
   "dependencies": {
-    "atom-languageclient": "^0.9.7",
+    "atom-languageclient": "^1.10.1",
     "atom-package-deps": "^4.6.2",
     "es6-promisify": "^6.0.0",
     "get-port": "^4.0.0",
